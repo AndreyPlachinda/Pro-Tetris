@@ -196,7 +196,7 @@ const setCanvasSettings = () => {
         const scoreField = document.getElementById('resultId');
         score = figureSettings.score;
         // @ts-ignore
-        scoreField.innerText = `Счет: ${score}`;
+        scoreField.innerText = `Score: ${score}`;
     };
     const runGame = () => {
         const type: TypeFigure = nextFigure;
@@ -257,7 +257,6 @@ const setCanvasSettings = () => {
     };
     const update = () => {
         time++;
-        // figureSettings.score = 0;
         if(time >= dropInter){
             playerDrop();
             time=0;
@@ -274,7 +273,7 @@ const setCanvasSettings = () => {
         context.fillText(text,(canvas.width/20)/2,(canvas.width/20)/2);
     };
 
-    setStatePlayer('Начните игру');
+    setStatePlayer('Start the game');
     if (gameRun) {
        runGame();
        canvasDrawFigure();
@@ -312,7 +311,7 @@ const setCanvasSettings = () => {
                 this.disabled=true;
             }
             else {
-                setStatePlayer('Игра окончена');
+                setStatePlayer('The game is over');
                 // @ts-ignore
                 this.disabled=false;
             }

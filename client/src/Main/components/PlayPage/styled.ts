@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { HomeFilled } from '@ant-design/icons';
+import { LeftCircleOutlined } from '@ant-design/icons';
 import {Button} from "antd";
 
 export const TetrisPageStyled = styled.div`
@@ -15,7 +15,7 @@ export const HeaderComponentStyled = styled.div`
   padding: 16px;
 `;
 
-export const HomeFilledStyled = styled(HomeFilled)`
+export const LeftCircleOutlinedStyled = styled(LeftCircleOutlined)`
   font-size: 24px;
   cursor: pointer;
 `;
@@ -35,4 +35,14 @@ export const DivComponentStyled = styled.div`
 export const PlayButtonStyled = styled(Button)`
   width: 200px;
   margin-top: 16px;
+  background: #2B7804;
+  border-color: #2B7804;
+  &:hover {
+    background: #6A9D4F;
+    border-color: #2B7804;
+  }
 `;
+
+// export const KeyboardButtonStyled = styled.div`
+//   display: flex;
+// `;

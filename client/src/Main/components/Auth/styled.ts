@@ -11,8 +11,13 @@ export const AuthFormWrapperStyled = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 36px;
-  width: 300px;
+  width: 500px;
   margin-left: 16px;
+`;
+
+export const FormStyled = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const TitleStyled = styled.div`
@@ -27,9 +32,18 @@ export const TextStyled = styled.div`
 export const InputStyled = styled(Input)`
   margin-top: 16px;
   border-radius: 4px;
+  margin-left: 16px;
 `;
 
 export const ButtonStyled = styled(Button)`
   margin-top: 16px;
   border-radius: 4px;
+  margin-left: 16px;
+  width: 200px;
+  background: #2B7804;
+  border-color: #2B7804;
+  &:hover {
+    background: #6A9D4F;
+    border-color: #2B7804;
+  }
 `;

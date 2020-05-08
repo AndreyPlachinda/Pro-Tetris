@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 export const HeaderPage: React.FC = () => (
     <s.HeaderComponentStyled>
-        <div />
-        <TitleStyled>Tetris</TitleStyled>
+        <Link to={{ pathname: '/' }}>
+            <s.LeftCircleOutlinedStyled />
+        </Link>
+        <TitleStyled>Pro-Tetris</TitleStyled>
         <Tooltip placement="leftTop" title="Home Page">
-            <Link to={{ pathname: '/' }}>
-                <s.HomeFilledStyled />
-            </Link>
+            <div />
         </Tooltip>
     </s.HeaderComponentStyled>
 );

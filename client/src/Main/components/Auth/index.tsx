@@ -18,18 +18,20 @@ export const FormAuthComponent = () => {
     return (
         <s.AuthPageStyled>
             <s.AuthFormWrapperStyled>
-                <s.TitleStyled>Tetris</s.TitleStyled>
-                <s.TextStyled>Введите свое имя:</s.TextStyled>
-                <s.InputStyled
-                    value={value}
-                    onChange={onChange}
-                    placeholder="Введите имя"
-                />
-                <Link to={{ pathname: '/tetris' }}>
-                    <s.ButtonStyled type="primary" onClick={onClick}>
-                        Войти
-                    </s.ButtonStyled>
-                </Link>
+                <s.TitleStyled>Pro-Tetris</s.TitleStyled>
+                <s.FormStyled>
+                    <s.TextStyled>Имя:</s.TextStyled>
+                    <s.InputStyled
+                        value={value}
+                        onChange={onChange}
+                        placeholder="Введите имя"
+                    />
+                    <Link to={{ pathname: '/tetris' }}>
+                        <s.ButtonStyled type="primary" onClick={onClick}>
+                            Войти
+                        </s.ButtonStyled>
+                    </Link>
+                </s.FormStyled>
             </s.AuthFormWrapperStyled>
         </s.AuthPageStyled>
     )
