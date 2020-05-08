@@ -26,7 +26,7 @@ export const FormAuthComponent = () => {
                         onChange={onChange}
                         placeholder="Введите имя"
                     />
-                    <Link to={{ pathname: '/tetris' }}>
+                    <Link to={{ pathname: '/main' }}>
                         <s.ButtonStyled type="primary" onClick={onClick}>
                             Войти
                         </s.ButtonStyled>

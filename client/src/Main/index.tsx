@@ -12,7 +12,7 @@ export const MainComponent: React.FC = () => (
             <Layout style={{ background: 'white' }}>
                 <Content>
                     <Switch>
-                        <Route exact path="/tetris" component={TetrisPage} />
+                        <Route exact path="/main" component={TetrisPage} />
                         <Route exact path="/" component={FormAuthComponent} />
                     </Switch>
                 </Content>
